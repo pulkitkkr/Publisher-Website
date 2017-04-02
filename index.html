@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<style type="text/css">
+		
+	</style>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rivista Science Publisher</title>
+	<meta name="description" content="Scientia Praecepta: Exploring the world of science is a series of journals of Physical Science, Chemical Science and Engineering Science and Technology " />
+	<style type="text/css">
+		#myCarousel .nav a small {
+ 		 
+		}
+		#myCarousel .nav {
+			background:#eee;
+		}	
+		#myCarousel .nav a {
+    		border-radius:0px;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+		$(document).ready( function() {
+    
+	
+	var clickEvent = false;
+	$('#myCarousel').on('click', '.nav a', function() {
+			clickEvent = true;
+			$('.nav li').removeClass('active');
+			$(this).parent().addClass('active');		
+	}).on('slid.bs.carousel', function(e) {
+		if(!clickEvent) {
+			var count = $('.nav').children().length -1;
+			var current = $('.nav li.active');
+			current.removeClass('active').next().addClass('active');
+			var id = parseInt(current.data('slide-to'));
+			if(count == id) {
+				$('.nav li').first().addClass('active');	
+			}
+		}
+		clickEvent = false;
+	});
+});
+
+	</script>
+	<meta name="keywords" content="Scientia Praecepta,journals,Ravista" />
+	<meta name="author" content="Luka Cvetinovic for Codrops" />
+	<link rel="apple-touch-icon" sizes="57x57" href="fav/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="fav/apple-icon-60x60.png">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"> 
+<link rel="apple-touch-icon" sizes="72x72" href="fav/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="fav/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="fav/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="fav/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="fav/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="fav/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="fav/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="fav/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="fav/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+<link rel="manifest" href="fav/manifest.json">
+<link rel="stylesheet" type="text/css" href="css/demo.css">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="fav/ms-icon-144x144.png">
+
+<meta name="theme-color" content="#ffffff">
+	<!-- Normalize -->
+	 
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!-- Bootstrap -->
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Owl -->
+	<link rel="stylesheet" type="text/css" href="css/owl.css">
+	<!-- Animate.css -->
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.1.0/css/font-awesome.min.css">
+	<!-- Elegant Icons -->
+	<link rel="stylesheet" type="text/css" href="fonts/eleganticons/et-icons.css">
+	<!-- Main style -->
+	<link rel="stylesheet" type="text/css" href="css/cardio.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.13/angular.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/controller.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	
+	<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.scrollbox.min.js"></script>
+
+</head>
+
+<body>
+	<nav style="padding-top:1%; padding-bottom:0.2%; margin:0px" class="navbar navbar-fixed-top">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header" >
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+							
+				
+							
+				<a class="navbar-brand" href=""><div class="circle" style="position: relative;top: -58px; width: 170;height: 170;"><center><img src="img/icons/rv.png" style='z-index: 100;position: relative;top: 37px' data-active-url="img/icons/rv.png" width='145px' alt=""></center></div></a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs">
+				<ul class="nav navbar-nav navbar-right main-nav">
+					<li style="margin:0px 1px;"><a  href="http://www.rivistasciencepublisher.com">Home</a></li>					
+					<li style="margin:0px 1px;"><a target="_blank" href="http://www.scientiapraecepta.com">Scientia Praecepeta</a></li>
+					<li style="margin:0px 1px;"><a target="_blank" href="roles/Roles.pdf">Roles of Editor</a></li>
+					
+					<li style="margin:0px 1px;"><a target="_blank" href="roles/charges.pdf">Publication Charges</a></li>
+					<li style="margin:0px 1px;"><a  target="_blank" href="contact.html" >Contact Us</a></li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+    </nav>
+    <div class="col-md-2 hidden-sm hidden-xs" style="z-index: 2">
+			<div style="border:0px solid black; margin: 105px 5px">
+				<center>
+				<a href="cs/cs.html" target="_blank"><img src="img/MS/m11.jpg" width="80%" style="margin: 5%;box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.35);" alt="Avatar" ></a>
+					<a href="cs/cs.html" target="_blank"><img src="img/MS/m13.jpg" width="80%" style="margin: 5%;box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.35);" alt="Avatar" ></a>
+					
+					<a href="cs/cs.html" target="_blank"><img src="img/MS/m12.jpg" width="80%" style="margin: 5%;box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.35);" alt="Avatar" ></a>
+					<a href="cs/cs.html" target="_blank"><img src="img/MS/m9.jpg" width="80%" style="margin: 5%;box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.35);" alt="Avatar" ></a>
+					<a href="cs/cs.html" target="_blank"><img src="img/MS/m4.jpg" width="80%" style="margin: 5%;box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.35);" alt="Avatar" ></a>
+			
+				</center>
+			</div>
+	</div>
+	<div  class="col-md-8" style="z-index: 2">	
+		 <br/><br/><br/>
+		 <center><h2 class="fontHead_red" style="font-family: 'Dancing Script', cursive;">Rivista Science Publisher</h2>
+		</center>
+		 		 
+    <div style="" id="myCarousel" class="carousel slide" data-interval="2500" data-ride="carousel">
+    
+      <!-- Wrapper for slides -->
+      <div style=" "  class="carousel-inner">
+      
+        <div  class="item active">
+          <img src="img/c1.jpg" >
+           <div class="carousel-caption">
+           <center>
+		 	 <div style="width: 100px;height: 29px;  background: red;   -moz-border-radius: 50%;   -webkit-border-radius: 50%;  border-radius: 50%;box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.03)"><h4 class="fontHead" style="font-family: 'Dancing Script', cursive;">RSP</h4></div><!--Change Font; justify It-->
+			</center>
+		 <br/>
+            <a  style="color: white" href="publish.html"><h3>Publish with Us</h3></a>
+            <!--<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>-->
+          </div>
+        </div><!-- End Item -->
+ 
+         <div class="item">
+          <img src="img/c2.jpg">
+           <div class="carousel-caption">
+           <center>
+		 	 <div style="width: 100px;height: 29px;  background: red;   -moz-border-radius: 50%;   -webkit-border-radius: 50%;  border-radius: 50%;box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.03)"><h4 class="fontHead" style="font-family: 'Dancing Script', cursive;">RSP</h4></div><!--Change Font; justify It-->
+			</center>
+            <h3>Find Books and Journals</h3>
+           <!-- <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>-->
+          </div>
+        </div><!-- End Item -->
+        
+        <div class="item">
+          <img src="img/c3.jpg">
+           <div class="carousel-caption">
+           <center>
+		 	
+		 	<div style="width: 100px;height: 29px;  background: red;   -moz-border-radius: 50%;   -webkit-border-radius: 50%;  border-radius: 50%;box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.03)"><h4 class="fontHead" style="font-family: 'Dancing Script', cursive;">RSP</h4></div><!--Change Font; justify It-->
+			</center>
+            <h3>Find Books and Journals</h3>
+            <!--<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>-->
+          </div>
+        </div><!-- End Item -->
+         <div class="item">
+          <img src="img/c4.jpg">
+           <div class="carousel-caption">
+           <center>
+		 	
+		 	<div style="width: 100px;height: 29px;  background: red;   -moz-border-radius: 50%;   -webkit-border-radius: 50%;  border-radius: 50%;box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.03)"><h4 class="fontHead" style="font-family: 'Dancing Script', cursive;">RSP</h4></div><!--Change Font; justify It-->
+			</center>
+            <h3>Find Books and Journals</h3>
+           <!-- <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>-->
+          </div>
+        </div><!-- End Item -->
+        
+        
+                
+      </div><!-- End Carousel Inner -->
+
+
+    	<ul class="nav nav-pills hidden-sm hidden-xs nav-justified">
+          <li data-target="#myCarousel" data-slide-to="0" class="active "><a href="#">Books</a></li>
+          <li data-target="#myCarousel" data-slide-to="1"><a href="#">Thesis</a></li>
+          <li data-target="#myCarousel" data-slide-to="2"><a href="#">Journals</a></li>
+
+          <li data-target="#myCarousel" data-slide-to="3"><a href="#">Other Aademic Articles</a></li>
+          
+        </ul>
+
+
+    </div><!-- End Carousel -->
+    <br/>
+    <marquee scrollamount=11><a href="join/us.html"><h4><i><b>Join Us as an Editor/Assistant Editor<br/></b></i></h4></a></marquee>
+    <div class="row text-center title">
+			<h5  class="fontHead_invert" style="font-size:1.4em; line-height: 150%; font-family: 'Times New Roman', Georgia, Serif; text-align: justify; text-justify: inter-word;"> Rivista Science Publisher (RSP) aimed to deliver the information to the researcher, Scientists, teachers and young professionals of modern era about Science & Technology. Researchers from the universities, technical and non technical institutions across the world can access articles from Rivista Science Publisher which is fully open access. It provides the platform to the young researchers to present their ideas about current progress in various sectors of research and get the access to the work of others around the world. Rivista Science Publisher is a wholly owned profit unit of Scientia Praecepta: Exploring the world of science. The mission of RSP is to support the liberal, technical and enlightening purposes of Scientia Praecepta through scholarly open access publishing in the fields of the Science & technology on its own behalf. RSP Publishing's portfolio comprises of highly admired new journals of current era in the field of Physical Science, Chemical Science and Engineering technology such as  :</h5>
+				<br/>
+		<div class="row">
+			<div class="col-md-6">
+				<center>
+					<ul align="left" class="light fontHead_invert" style=" list-style-image: url('img/leaf.png');font-family: 'Times New Roman', Georgia, Serif; font-size: 1.4em">
+						<a href="cs/cs.html"><li> &nbsp;Achievement in Material Science &Technology (AMST)</li></a>
+			           	<a href="cs/cs.html"><li> &nbsp;Achievement in Polymer science (APS)</li></a>
+						<a href="cs/cs.html"><li> &nbsp;Achievement in Nano-Science & Technology (ANST)</li></a>
+						<a href="cs/cs.html"><li> &nbsp;Achievement in Magnetic Material (AMM)</li></a>
+						<a href="cs/cs.html"><li> &nbsp;Achievement in Condensed Matter Physics (ACMP)</li></a>
+						<a href="cs/cs.html"><li> &nbsp;Achievement in Material Modification by Radiation (AMMR)</li></a>
+					</ul>
+					<br/>
+				</center>						
+			</div>
+			<div class="col-md-6">
+				<center>
+					<ul align="left" class="light fontHead_invert" style="list-style-image: url('img/leaf.png'); font-family: 'Times New Roman', Georgia, Serif; font-size: 1.4em">
+						
+						<a href="cs/cs.html"><li> &nbsp;Achievement in Computer Science & Information Technology (ACSIT)</li></a>
+						<a href="cs/cs.html"><li> &nbsp;Achievement in Mechanical  & Automation Technology (AMAT)</li></a>
+						<a href="cs/cs.html"><li> &nbsp;Achievement in Electrical & Communication Technology (AECT)</li></a>
+						<a href="cs/cs.html"><li> &nbsp;Achievement in Electrical & Instrumentation Technology (AEIT)</li></a>
+					</ul>
+				</center>
+			</div>
+		</div>
+		<h5  style="font-size:1.4em; line-height: 150%; font-family: 'Times New Roman', Georgia, Serif;text-align: justify; text-justify: inter-word" class="fontHead_invert">Rivista Science Publisher is also planning to open a series of new journals under the head of Scientia Praecepta for the different sectors of research. People from all the areas of science, research and technology are welcomed to join our editorial board and reviewer community for the authentic, original, new and innovative communication of the latest research around the world. Our aim is to provide the platform to world class research performed by the researcher for the world community presented by the Rivista Science publisher through our journal head Scientia Praecepta: exploring the world of science.</h5> 
+
+
+	</div>
+</div>
+	<div class="col-md-2 hidden-sm hidden-xs" style="z-index: 2">
+		<div style="border: 0px solid black; margin: 115px 5px">
+			<center>
+				<a href="cs/cs.html" target="_blank"><img src="img/MS/m10.jpg" width="80%" style="margin: 5%;box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.35);" alt="Avatar" ></a>
+				<a href="cs/cs.html" target="_blank"><img src="img/MS/m5.jpg" width="80%" style="margin: 5%;box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.35);" alt="Avatar" ></a>
+				<a href="cs/cs.html" target="_blank"><img src="img/MS/m8.jpg" width="80%" style="margin: 5%;box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.35);" alt="Avatar" ></a>
+				<a href="cs/cs.html" target="_blank"><img src="img/MS/m7.jpg" width="80%" style="margin: 5%;box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.35);" alt="Avatar" ></a>
+				<a href="cs/cs.html" target="_blank"><img src="img/MS/m6.jpg" width="80%" style="opacity:0;margin: 5%;box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.35);" alt="Avatar" ></a>
+		
+			</center>
+		</div>
+	</div>
+
+ <section  style="  padding:5px" class="section">
+		
+			<div  class="visible-sm visible-xs"" id="slideImg">
+  				<div class="slideMain">
+  				  <ul class="slide1"><li><a href="#" target="_blank">
+  					<li><a href="cs/cs.html" target="_blank"><img class="hoverx" src="img/MS/m4.jpg"  style="margin:0% 5%;box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.35);" alt="Avatar" ></a></li>
+					<li><a href="cs/cs.html" target="_blank"><img class="hoverx" src="img/MS/m5.jpg"  style=" margin:0% 5%;box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.35);" alt="Avatar" ></a></li>
+					<li><a href="cs/cs.html" target="_blank"><img class="hoverx" src="img/MS/m6.jpg"  style=" margin:0% 5%;box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.35);" alt="Avatar" ></a></li>
+					<li><a href="cs/cs.html" target="_blank"><img class="hoverx" src="img/MS/m7.jpg"  style=" margin:0% 5%;box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.35);" alt="Avatar" ></a></li>
+     		        <li><a href="cs/cs.html" target="_blank"><img class="hoverx" src="img/MS/m8.jpg" style=" margin :0% 5%;box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.35);" alt="Avatar" ></a></li>
+					<li><a href="cs/cs.html" target="_blank"><img class="hoverx" src="img/MS/m9.jpg" style=" margin :0% 5%;box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.35);" alt="Avatar" ></a></li>
+					<li><a href="cs/cs.html" target="_blank"><img class="hoverx" src="img/MS/m10.jpg" style=" margin :0% 5%;box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.35);" alt="Avatar" ></a></li>
+					<li><a href="cs/cs.html" target="_blank"><img class="hoverx" src="img/MS/m11.jpg" style=" margin :0% 5%;box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.35);" alt="Avatar" ></a></li>
+					<li><a href="cs/cs.html" target="_blank"><img class="hoverx" src="img/MS/m12.jpg" style=" margin :0% 5%;box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.35);" alt="Avatar" ></a></li>
+					<li><a href="cs/cs.html" target="_blank"><img class="hoverx" src="img/MS/m13.jpg" style=" margin :0% 5%;box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.35);" alt="Avatar" ></a></li>
+					
+     		      </ul>
+ 				</div>
+			</div>
+		
+					
+		<script type="text/javascript">
+			$("#slideImg").rotate({
+			  speed:11,
+			  width:"100%",
+			  slide1:".slide1"});
+
+		</script>
+		
+	 
+			
+				 
+		</div>
+
+	</section>
+ <footer>
+		<div class="B_barx" style="z-index: 2">
+			<div class="container" style="z-index: 2">
+				<div class="row" style="z-index: 2">
+					<div  class="col-md-3">
+						<center>
+							<span class="BotSpan"><a href="publish.html" target="_blank">Publish With Us</a></span>
+						</center>
+					</div>
+					<div class="col-md-2">
+						<center>
+							<span class="BotSpan"><a target='_blank' href="http://www.scientiapraecepta.com">Scientia Praecepta</a></span>	
+						</center> 
+					</div>
+					<div class="col-md-2">
+						<center>
+							<span class="BotSpan"><a href="" data-toggle="modal" data-target="#ulock"> Open Access</a> </span>
+						</center>
+					</div>
+					<div class="col-md-2">
+						<center>
+							<span class="BotSpan"><a target="_blank" href="roles/charges.pdf">Publication Charges</a></span>
+						</center>
+					</div>
+					<div class="col-md-2">
+						<center>
+							<span class="BotSpan"><a target="_blank" href="roles/ethics.pdf">Publication Ethics</a></span>
+						</center>
+					</div>
+					<div class="col-md-1">
+						<center>
+							<span class="BotSpan" ><a href="join/us.html"> Join Us</a></span>
+						</center>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			
+		</div>				
+		
+			</footer>
+			<div  class="modal fade" id="ulock" role="dialog" aria-labelledby="About Open Access" aria-hidden="true">
+				
+				<div class="modal-dialog">
+					<br/><br/><br/><br/>
+					<div  class="modal-content modal-popup">
+
+						<a href="#" data-dismiss="modal" class="close-link"><i class="icon_close_alt2"></i></a>	
+						<h3  style="font-family: 'Times New Roman', Georgia, Serif; " class="fontHead_red white ">Open Access</h3>
+						<center>
+							<img src="img/ulock.png" width="50%" alt="" class="icon">
+						</center>
+						
+						<p style="text-align: justify; text-justify: inter-word;" class="fontHead">
+						Open Access is a publishing model, without requiring any subscription to the journal that provides direct, worldwide, barrier-free access to the full text of research articles. To display the work publically in digital medium the authors are permitted to use, allocate and convey the main purpose of the related work, subjected to proper authorship. In this model, the cost of publication is covered by the author’s institution or research funds (as per the norms of publisher). The publisher is liable to publish the material to all interested readers who can access the journal at the cost of open access charges without paying any subscription fee.
+						Other than their cost-recovery model, Open Access journals are no different from traditional subscription-based journals; they undergo the same peer-review and quality control as any other scholarly journal. Moreover, Open Access allows for maximum visibility, uptake and use of the published material.
+						</p>
+					</div>
+				</div>
+			</div>
+
+    <div class="mobile-nav">
+		<ul>
+		</ul>
+		<a href="#" class="close-link"><i class="arrow_up"></i></a>
+	</div>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/typewriter.js"></script>
+	<script src="js/jquery.onepagenav.js"></script>
+	<script src="js/crawler.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
